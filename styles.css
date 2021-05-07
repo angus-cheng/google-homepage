@@ -1,0 +1,82 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 4fr repeat(4, 1fr); 
+    grid-template-areas: 
+        "about store . gmail images menu sign_in";
+    justify-items: center;
+}
+
+#google_image {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+}
+
+.wrapper {
+    display: flex;
+    position: relative;
+    min-width: 100px;
+    margin: 20px 0 -10px 0;
+    justify-content: center;
+    width: auto;
+}
+
+.input_container {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    max-width: 584px;
+}
+
+.input_container i {
+    margin: 12px -50px 0px 0px;
+    color: #9aa0a6;
+    opacity: 85%;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+#input_bar {
+    border-radius: 24px;
+    color: white;
+    border: 1px solid #dfe1e5;
+    padding: 5px 8px;
+    outline: 0;
+    height: 44px;
+    margin: 0 auto;
+    flex: 1;
+    max-width: 584px;
+}
+
+.search_buttons_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 25px;
+}
+
+.google_search, .lucky_search{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 0px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.spacer {
+    flex-basis: 10px;
+}
+
+footer {
+    bottom: 0;
+    position: absolute;
+}
