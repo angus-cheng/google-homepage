@@ -1,15 +1,52 @@
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr) 4fr repeat(4, 1fr); 
-    grid-template-areas: 
-        "about store . gmail images menu sign_in";
-    justify-items: center;
+nav {
+    position: relative;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    width: 100%;
+    height: 75px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+body {
+    background-color: white;;
+}
+
+.item-sign_in {
+    font-size: 28px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+nav li:nth-child(3) {
+    padding-left: 60%;
+}
+
+li a {
+    display: block;
+/*    padding: 16px; */
+    padding: 16px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: underline;
 }
 
 #google_image {
     position: relative;
     margin: 0 auto;
     display: flex;
+    float: none;
 }
 
 .wrapper {
@@ -78,5 +115,9 @@
 
 footer {
     bottom: 0;
-    position: absolute;
+    position:fixed;
+    color: rgba(0,0,0,.54);
+    background-color: rgb(218, 220, 224);
+    width: 100%;
+    display: flex;
 }
