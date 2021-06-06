@@ -3,53 +3,89 @@
     <head>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/768px-Google_%22G%22_Logo.svg.png">
         <title>Google</title>
         <meta charset="UTF-8">
     </head>
     <body>
-        <nav id="navbar">
-            <ul>
-                <li><a class="item-about" style="grid-area: about;">
-                    About
-                </a></li>
-                <li><a class="item-store" style="grid-area: store;">
-                    Store
-                </a></li>
-                <li><a class="item-gmail" style="grid-area: gmail;">
-                    Gmail
-                </a></li>
-                <li><a class="item-images" style="grid-area: images;">
-                    Images
-                </a></li>
-                <li><a class="item-menu" style="grid-area: menu;">
-                    <i class="fa fa-bars"></i>
-                </a></li>
-                <li><a class="item-sign_in" style="grid-area: sign_in;">
-                    <i class="fa fa-user-circle"></i>
-                </a></li>
-            </ul>
-        </nav>
-        <div class="grid-container">
-        </div>
-        <img id="google_image" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" width="280" height="90">
-        <form>
-            <div class="wrapper">
-                <div class="input_container">
-                    <i class="fa fa-search icon"></i>
-                    <label for="input_bar"></label>
-                    <input type="search" id="input_bar">
+        <header>
+            <nav id="navbar">
+                <ul>
+                    <li><a class="item-about" style="grid-area: about;">
+                        About
+                    </a></li>
+                    <li><a class="item-store" style="grid-area: store;">
+                        Store
+                    </a></li>
+                    <div class="wrapper_container_nav">
+                        <div class="wrapper_nav">
+                            <li><a class="item-gmail" style="grid-area: gmail;">
+                                Gmail
+                            </a></li>
+                            <li><a class="item-images" style="grid-area: images;">
+                                Images
+                            </a></li>
+                            <li><a class="item-menu" style="grid-area: menu;">
+                                <div id="app-icon-area"><img id="app-icon" src="dots-menu.png"></div>
+                            </a></li>
+                            <li><a class="item-sign_in" style="grid-area: sign_in;">
+                                Sign in
+                            </a></li>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="grid-container">
+            </div>
+            <img id="google_image" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" width="280" height="90">
+            <form>
+                <div class="wrapper">
+                    <div class="input_container">
+                        <i class="fa fa-search icon"></i>
+                        <label for="input_bar"></label>
+                        <input type="search" id="input_bar">
+                    </div>
                 </div>
-            </div>
-            <div class="search_buttons_container">
-                <label for="google_search"></label>
-                <input type="submit" class="google_search" value="Google Search">
-                <div class="spacer"></div>
-                <label for="lucky_search"></label>
-                <input type="submit" class="lucky_search" value="I'm Feeling Lucky">
-            </div>
-        </form>
-    </body>
+                <div class="search_buttons_container">
+                    <label for="google_search"></label>
+                    <input type="submit" class="google_search" value="Google Search">
+                    <div class="spacer"></div>
+                    <label for="lucky_search"></label>
+                    <input type="submit" class="lucky_search" value="I'm Feeling Lucky">
+                </div>
+            </form>
+        </main>
     <footer>
-        <p>Australia</p>
+        <div id="footer">
+            <div class="footer_wrapper">
+            <p>Australia</p>
+            <ul>
+            <div class="row1_container">
+                <li>
+                    <a>Advertising</a>
+                </li>
+                <li>
+                    <a>Business</a>
+                </li>
+                <li>
+                    <a>How Search works</a>
+                </li>
+            </div>
+            <div class="row2_container">
+                <li>
+                    <a>Privacy</a>
+                </li>
+                <li>
+                    <a>Terms</a>
+                </li>
+                <li>
+                    <a>Settings</a>
+                </li>
+            </div>
+            </ul>
+        </div>
     </footer>
+    </body>
 </html>
