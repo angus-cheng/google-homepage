@@ -54,10 +54,10 @@ li {
     padding: 10px;
 }
 
-li a {
+nav > ul li a {
     display: block;
 /*    padding: 16px; */
-    padding: 16px 16px;
+    padding: 16px  5px 16px 20px;
     text-align: center;
     text-decoration: none;
 }
@@ -195,7 +195,7 @@ footer p {
 
 footer ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 0 20px;
     flex-wrap: wrap;
 }
@@ -212,4 +212,11 @@ footer ul {
 
 p + ul {
     margin-top: -15px;
+}
+
+footer a {
+    display: block;
+    padding: 20px 15px 20px 5px;
+    text-align: center;
+    text-decoration: none;
 }
